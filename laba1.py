@@ -384,6 +384,7 @@ model3.classifier[1] = nn.Sequential(
     nn.Linear(96, 1),
 )
 
+
 model3 = model3.to(device)
 optimizer3 = torch.optim.Adam(model3.classifier[1].parameters(), lr=0.002)
 
